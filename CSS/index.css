@@ -1,0 +1,184 @@
+:root {
+    --time-color: hsl(215, 51%, 70%);
+    --price-color: hsl(178, 100%, 50%);
+    --bg-main: hsl(217, 54%, 11%);
+    --bg-card: hsl(216, 50%, 16%);
+    --text-color: hsl(215, 35%, 61%);
+    --white-color: hsl(0, 0%, 100%);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Outfit', sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-main);
+    color: var(--text-color);
+}
+
+.container {
+    width: 320px;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--bg-card);
+    box-shadow: 0px 30px 5px 10px hsla(214, 56%, 8%, 0.279);
+}
+
+.card_figure {
+    width: 100%;
+    height: 250px;
+    margin: 0;
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: url('../images/image-equilibrium.jpg');
+}
+
+.container .img {
+    width: 100%;
+    height: 100%;
+}
+
+.container .img:hover {
+    background-image: url('../images/icon-view.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: hsla(178, 100%, 50%, 0.463);
+}
+
+.container .container--h1 {
+    margin-top: 20px;
+    font-weight: 600;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.container--h1:hover {
+    color: var(--price-color);
+}
+
+.container--p {
+    margin-bottom: 5px;
+    font-size: 1.7rem;
+    text-align: start;
+    font-weight: 300;
+    line-height: 25px;
+    color: var(--text-color);
+}
+
+.container_details {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--text-color);
+}
+
+.container_details--price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_details--price img {
+    width: 15px;
+    height: 20px;
+}
+
+.container_details--price p {
+    margin-bottom: 15;
+    padding-left: 8px;
+    font-size: 1.8rem;
+    color: var(--price-color);
+}
+
+.container_details--time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_details--time img {
+    width: 20px;
+    height: 20px;
+}
+
+.container_details--time p {
+    margin-bottom: 15px;
+    padding-left: 8px;
+    font-size: 1.8rem;
+    color: var(--time-color);
+}
+
+.container_creator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_creator {
+    width: 100%;
+    justify-content: start;
+    padding: 10px 0px 0px 0px;
+}
+
+.container_creator--figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    margin: 0;
+    background-color: var(--white-color);
+    border-radius: 50%;
+}
+
+.container_creator--figure img {
+    width: 95%;
+    height: 95%;
+}
+
+.container_creator p {
+    padding-left: 15px;
+    margin: 0;
+    font-size: 1.8rem;
+    color: var(--text-color);
+}
+
+.container_creator p span {
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.container_creator p span:hover {
+    color: var(--price-color);
+}
+
+footer {
+    padding-top: 10px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    text-decoration: none;
+    color: hsl(193, 65%, 54%);
+}
+
+.attribution a:hover {
+    color: #00ffff;
+}
